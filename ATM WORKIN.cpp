@@ -1,0 +1,205 @@
+//WORKING OF ATM MACHINE
+#include <iostream>
+#include <ctime>
+
+using namespace std;
+int main()
+{
+  float Balance = 50000.00; 
+  int account_type, option,pin=12345,account,account_number,money,system,L,R,F,y,n;
+  
+  float amount;
+  char g,h,m,z;
+  g='y';
+  h='n';
+ 
+   // time_t currentTime = time(nullptr);
+
+   
+    struct tm* localTime = localtime(&currentTime);
+
+    
+    char timeBuffer[9];
+    strftime(timeBuffer, sizeof(timeBuffer), "%H:%M:%S", localTime);
+  
+  char dateBuffer[11];
+    strftime(dateBuffer, sizeof(dateBuffer), "%d-%m-%y", localTime);
+  
+  cout <<"                               "<<"****************************************************"<<endl;
+  cout <<"                               "<<"*                   WELCOME TO                     *"<<endl;
+  cout <<"                               "<<"*              ATM WORKING SYSTEM                  *"<<endl;
+  cout <<"                               "<<"****************************************************"<<endl;
+  cout <<"                               "<<"                                                    "<<endl;
+  cout <<"                               "<<"INSERT your Card [Press ENTER to insert card]"<<endl;
+  cin.get();
+  
+  cout <<"                               "<<"Please Enter Your PIN = ";
+  cin  >>pin;
+  cout <<"                               "<<"                                                    "<<endl;
+  cout <<"                               "<<"                                                    "<<endl;
+ 
+  cout <<"                               "<<"Account Holder Name: MUHAMMAD NABEEL"<<endl;
+  cout <<"                               "<<"                                                    "<<endl;
+  F:
+  L:
+  
+  cout <<"                               "<<"               SELECT YOUR ACCOUNT TYPE             "<< endl;
+  cout <<"                               "<<"                                                    "<<endl;
+  cout <<"                               "<<"1) Current         "<< endl;
+  cout <<"                               "<<"2) Saving          "<< endl;
+  cout <<"                               "<<"3) Default         "<< endl;
+
+  cout <<"                               "<<"                                                    "<<endl;
+  cout <<"                               "<<"Please select account type (1,2 Or 3): ";
+  cin >> account_type;
+
+  if(account_type == 1 || account_type == 2 || account_type == 3)  
+  {
+  cout <<"                               "<<"                                                    "<<endl;
+  cout <<"                               "<<"1) Cash Withdraw"   << endl;
+  cout <<"                               "<<"2) Balance Inquiry" << endl;
+  cout <<"                               "<<"3) Amount Transfer" << endl;
+  cout <<"                               "<<"4) Main Menu (Start Over)"       << endl;                            
+  cout <<"                               "<<"                                                    "<<endl;
+  cout <<"                               "<<"5) QUIT"            << endl;   
+  cout <<"                               "<<"                                                    "<<endl;
+
+
+  cout <<"                               "<<"Select an option (1,2,3,4 OR 5): ";
+  cin  >> option;
+ }
+    if(option == 1) 
+    {
+    
+		
+      
+  cout <<"                               "<<"Please enter amount to withdraw = ";
+  cin  >> amount;
+  cout <<"                               "<<"                                                    "<<endl;
+  Balance = Balance - amount;
+  cout <<"                               "<<"Balance withdrawl successful!!!. Your new balance is " << Balance << endl;
+  cout <<"                               "<<"                                                    "<<endl;
+  cout <<"                               "<<"                                                    "<<endl;
+  cout <<"                               "<<"                                                    "<<endl;
+  cout <<"                               "<<"                                                    "<<endl;
+  cout <<"                               "<<"                                                    "<<endl;
+	
+			
+
+   
+   
+    if(amount <= 0)
+    
+  cout <<"                               "<<"Amount can not be zero or negative" << endl;
+  cout <<"                               "<<"                                                    "<<endl;
+    
+   if(amount > Balance) 
+  
+
+  cout <<"                               "<<"You do not have much funds to withdraw this amount" << endl;
+
+}
+
+ switch(option)
+ {
+	case 2:     
+    if(option == 2) 
+    {
+  cout <<"                               "<<"                                                    "<<endl;
+  cout <<"                               "<<"Your Balance is Rs "<< Balance << endl;
+  cout <<"                               "<<"                                                    "<<endl;
+}
+  cout <<"                               "<<"Do you want Another Transaction:(y/n)=";
+    cin>>z;
+    if (z=='y')
+    {
+    	goto F;
+	}
+	if (z=='n')
+	{
+		goto N;
+	}
+	break;
+}
+  if(option == 3)
+  {
+
+	  
+  cout <<"                               "<<"                                                    "<<endl;
+  
+  cout<<"                                "<<"Enter Account Number=";
+  cin>>account_number;
+  cout<<"                                "<<"Enter amount=";
+  cin>>amount;
+  cout <<"                               "<<"                                                    "<<endl;
+  cout<<"                                "<<amount<<" "<<"Rupees Transfer Successfully to Account No :"<<account_number<<endl;
+  cout <<"                               "<<"                                                    "<<endl;
+  Balance = Balance - amount;
+
+  cout <<"                               "<<"Your Balance is Rs "<< Balance << endl;
+
+  
+
+}
+  if(option == 4)
+  {
+  goto L;
+  }
+  cout <<"                               "<<"                                                    "<<endl;
+
+  
+  cout <<"                               "<<"Do you want to Print RECEIPT {y or n} =  ";
+  cin  >>m;
+  cout <<"                               "<<"                                                        "<<endl;
+  
+ 
+  
+  
+  if(g==m)
+   {
+   
+    cout <<"                               "<<"                PRINTING RECEIPT...               "<<endl;
+    cout <<"                               "<<"                                                        "<<endl;
+
+			
+			
+			
+  cout<<"                                "<<"       THANKS FOR USING OUR SERVICE          "<<endl;
+  cout<<"                                "<<"---------------------------------------------"<<endl;
+  cout<<"                                "<<"             ATM TRANSACTION RECORD           "<<endl;
+  cout<<"                                "<<"---------------------------------------------"<<endl;
+  
+std::cout<<"                                 "<<"        Time:               "                        << timeBuffer << std::endl;
+std::cout<<"                                 "<<"        Current Date:       "                        << dateBuffer << std::endl;
+  cout<<"                                "<<"         LOCATION:           OKARA                  "<<endl;
+  cout<<"                                "<<"         Account No:         "<<21020107283100<<"    "<<endl;
+  cout <<"                               "<<"                                                     "<<endl;
+
+  cout <<"                               "<<"         Your Available Balance is Rs "<< Balance   << endl;
+}
+
+ if(option == 5)
+  goto R;
+  
+else
+N:
+  {
+  
+  
+
+  R:
+	
+  
+  cout <<"                               "<<"                                                    "<<endl;
+  
+  cout <<"                                        "<<"Thank You For Using Our ATM!" << endl;
+
+}
+ 
+ 
+    
+
+	
+
+  return 0;
+}
