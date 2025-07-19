@@ -73,3 +73,8 @@ ATMs have revolutionized the way people bank. They provide convenient and easy a
 Each step in the process ensures security, accuracy, and efficiency in handling banking transactions through the ATM.
 
 ![atm-machine](https://github.com/user-attachments/assets/a83ab19a-7df7-4753-9359-fe89f8f4505d)
+<img width="1136" height="639" alt="1" src="https://github.com/user-attachments/assets/15f3d5e5-2a44-4e9f-a692-82829798c375" />
+<img width="1106" height="672" alt="2" src="https://github.com/user-attachments/assets/d1d13ba4-ccb2-412d-911b-795b0da544e5" />
+<img width="1121" height="638" alt="3" src="https://github.com/user-attachments/assets/ddce6840-ad6d-408a-95d0-f33ccb8ad8ba" />
+<img width="1119" height="645" alt="4" src="https://github.com/user-attachments/assets/66ba2f74-29f8-4dea-8d54-5e141ffd1912" />
+<img width="1125" height="651" alt="5" src="https://github.com/user-attachments/assets/fda42546-e80b-4461-9a44-94c796b822f9" />
