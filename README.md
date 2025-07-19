@@ -72,3 +72,4 @@ ATMs have revolutionized the way people bank. They provide convenient and easy a
 •	The ATM returns to the idle state, ready for the next user to initiate a transaction.
 Each step in the process ensures security, accuracy, and efficiency in handling banking transactions through the ATM.
 
+![atm-machine](https://github.com/user-attachments/assets/a83ab19a-7df7-4753-9359-fe89f8f4505d)
